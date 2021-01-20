@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Calculator
+        </title>
+        <style>
+            body{
+                max-width: 800px;
+                margin: auto;
+                border: 3px solid black;
+                padding: 10px;
+                margin-top: 60px;
+                font-family: sans-serif;
+            }
+            .centeredItemsText{
+                margin: auto;
+                text-align: center;
+            }
+            .rowItems{
+                display: inline-block;
+            }
+            .btns{
+                height: 35px;
+                width: 45px;
+                display: inline-block;
+                font-size: large;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <h1 class="centeredItemsText">
+                My Calculator
+            </h1><br>
+        </header>
+        <div class="centeredItemsText"> 
+            <div class="rowItems">
+                <label for="num1Inp">
+                    Number 1
+                </label><br><br>
+                <input type="number" id="num1Inp" name="num1Inp">
+            </div>
+            <div class="rowItems">
+                <label for="num2Inp">
+                    Number 2
+                </label><br><br>
+                <input type="number" id="num2Inp" name="num2Inp">
+            </div>
+        </div>
+        <br>
+        <div class="centeredItemsText">
+            <button class="btns add">
+                +
+            </button>
+            <button class="btns sub">
+                -
+            </button>
+            <button class="btns mul">
+                *
+            </button>
+            <button class="btns div">
+                /
+            </button>
+        </div>
+        <div class="centeredItemsText">
+            <p>
+                Result: <span class="resultLabel"></span>
+            </p>
+        </div>
+        <script src="calcLogic.js"></script>
+    </body>
+</html>
